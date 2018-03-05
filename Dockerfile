@@ -22,6 +22,7 @@ RUN mkdir /opt/nginx/http.conf.d && mkdir /opt/nginx/stream.conf.d
 
 ADD nginx.conf /opt/nginx/conf/nginx.conf
 ADD zero_downtime_reload.sh /opt/nginx/sbin/zero_downtime_reload.sh
+ADD stream.conf.d /opt/nginx/stream.conf.d
 
 WORKDIR /
 
